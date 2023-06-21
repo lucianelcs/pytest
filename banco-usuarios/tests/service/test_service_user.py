@@ -13,7 +13,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_existing_user(self):
+    def test_existing_user(self):
         name_rep = 'Luciane'
         job_rep = 'TechLead'
         wait_result = 'User already exists'
@@ -23,7 +23,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_null_user(self):
+    def test_null_user(self):
         name_null = None
         job_null = 'Tester'
         wait_result = 'Invalid User'
@@ -53,7 +53,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_invalid_job(self):
+    def test_invalid_job(self):
         name_inv = 'Luciane'
         job_inv = 100
         wait_result = 'Name or job need to be string'
@@ -82,7 +82,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_update_job_invalid_user(self):
+    def test_update_job_invalid_user(self):
         name = 'joão '
         job = 'TechLead'
         wait_result = 'User name is not found'
@@ -92,7 +92,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_update_job_with_null_user(self):
+    def test_update_job_with_null_user(self):
         name = None
         job = 'TechLead'
         wait_result = 'User name is not found'
@@ -102,7 +102,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_select_invalid_user(self):
+    def test_select_invalid_user(self):
         name = 'João'
         wait_result = 'User name is not found'
         service = ServiceUser()
@@ -111,7 +111,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_select_null_user(self):
+    def test_select_null_user(self):
         name = None
         wait_result = 'User name is not found'
         service = ServiceUser()
@@ -129,7 +129,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_delete_invalid_user(self):
+    def test_delete_invalid_user(self):
         name = 'João '
         wait_result = 'User name is not found'
         service = ServiceUser()
@@ -138,7 +138,7 @@ class TestServiceUser:
 
         assert wait_result == result
 
-    def test_validate_delete_null_user(self):
+    def test_delete_null_user(self):
         name = None
         wait_result = 'User name is not found'
         service = ServiceUser()
