@@ -15,7 +15,7 @@ Link para baixar o PyCharm - https://www.jetbrains.com/pycharm/download/#section
 Dicas: https://www.jetbrains.com/help/pycharm/installation-guide.html
 
  Instalação Conda
-Link para baixar o Conda: https://www.anaconda.com/download/ ou https://docs.conda.io/en/latest/miniconda.html
+Link para baixar o Conda: https://www.anaconda.com/download/ 
 
 Dicas:https://conda.io/projects/conda/en/latest/user-guide/install/macos.html
 
